@@ -1,0 +1,17 @@
+.form {
+  align-items: center;
+  margin: 30px auto;
+}
+
+.select {
+  width: 240px;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(241, 224, 192);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option {
+  padding-left: 15px;
+}

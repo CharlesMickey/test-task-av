@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 240px;
+  cursor: pointer;
+  border: 1px solid rgba(97, 95, 95, 0.493);
+  transition: 0.4s linear;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s linear;
+  box-shadow: -1px -1px 4px 2px rgba(255, 255, 255, 0.377);
+}
+
+.buttonDelete {
+  display: block;
+  background-image: url(../../images/Trash.svg);
+  width: 18px;
+  height: 19.3px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.4;
+  transition: opacity 0.2s linear;
+}
+
+.buttonDelete:hover {
+  opacity: 1;
+}
+
+.title {
+  font-size: 12px;
+  line-height: 1.22;
+  color: rgb(247, 227, 201);
+  text-align: center;
+  padding: 5px;
+}
