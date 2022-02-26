@@ -1,6 +1,6 @@
 
 ## Ссылка на gh-page:
-[Test-Task] https://charlesmickey.github.io/test-task-av/) 
+[Test-Task](https://charlesmickey.github.io/test-task-av/) 
 
 ### ТЗ:
 
