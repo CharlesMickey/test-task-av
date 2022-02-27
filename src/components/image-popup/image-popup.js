@@ -1,8 +1,6 @@
 import style from './image-popup.module.css';
 
 function ImagePopup({ card, close }) {
-
-
   function closePopupClickOnOverlay(e) {
     if (e.target.matches('.popup')) {
       close();

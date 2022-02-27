@@ -11,19 +11,41 @@
   justify-content: center;
   list-style-type: none;
   color: rgb(241, 224, 192);
-  gap: 8px;
+  gap: 10px;
   padding: 0;
   margin: 30px auto;
 }
 
 .pageItem {
   cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.pageItem:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.pageItem:active {
+  transform: scale(0.8);
+  cursor: pointer;
 }
 
 .pageLink {
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.pageLink:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.pageLink:active {
+  transform: scale(0.8);
   cursor: pointer;
 }
 
 .active {
-  color: rgb(104, 72, 13);
+  color: rgb(189, 124, 3);
 }

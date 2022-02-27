@@ -7,6 +7,7 @@
   cursor: pointer;
   border: 1px solid rgba(97, 95, 95, 0.493);
   transition: 0.4s linear;
+  border-radius: 3px;
 }
 
 .card:hover {
@@ -32,6 +33,19 @@
 
 .buttonDelete:hover {
   opacity: 1;
+}
+
+.buttonDelete:active {
+  transform: translateY(1px);
+}
+
+.img {
+  border-radius: 3px 3px 0 0;
+}
+
+.img:active {
+  box-shadow: -1px -1px 4px 2px rgba(255, 146, 146, 0.377);
+  transform: translateY(2px);
 }
 
 .title {

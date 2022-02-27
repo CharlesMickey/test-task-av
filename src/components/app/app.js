@@ -4,22 +4,18 @@ import AppHeader from '../app-header/app-header';
 import style from './app.module.css';
 import MainPage from '../main-page/main-page';
 import { ListContext } from '../../context/ListContext';
-import { SELECT_ALBUM } from '../../utils/constants';
+import { DATA, SELECT_ALBUM } from '../../utils/constants';
 import ImagePopup from '../image-popup/image-popup';
 
 function App() {
   const [defaultList, setDefaultList] = useState(null);
-  const [list, setList] = useState(null);
+  const [list, setList] = useState();
   const [value, setValue] = useState('');
   const [card, setCard] = useState(null);
 
   useEffect(() => {
-    getData()
-      .then((res) => {
-        setDefaultList(res);
-        setList(res);
-      })
-      .catch((err) => console.log(err));
+        setDefaultList(DATA);
+        setList(DATA);
   }, []);
 
   useEffect(() => {
