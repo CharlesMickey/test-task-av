@@ -4,7 +4,7 @@ import AppHeader from '../app-header/app-header';
 import style from './app.module.css';
 import MainPage from '../main-page/main-page';
 import { ListContext } from '../../context/ListContext';
-import { DATA, SELECT_ALBUM } from '../../utils/constants';
+import { SELECT_ALBUM } from '../../utils/constants';
 import ImagePopup from '../image-popup/image-popup';
 
 function App() {
@@ -14,8 +14,12 @@ function App() {
   const [card, setCard] = useState(null);
 
   useEffect(() => {
-        setDefaultList(DATA);
-        setList(DATA);
+    getData()
+      .then((res) => {
+        setDefaultList(res);
+        setList(res);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   useEffect(() => {
