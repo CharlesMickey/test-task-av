@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  height: 120px;
+  justify-content: end;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s linear;
+}
+
+.img:hover {
+  opacity: 0.5;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: rgba(241, 224, 192, 0.514);
+}

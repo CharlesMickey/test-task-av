@@ -6,6 +6,7 @@ import MainPage from '../main-page/main-page';
 import { ListContext } from '../../context/ListContext';
 import { SELECT_ALBUM } from '../../utils/constants';
 import ImagePopup from '../image-popup/image-popup';
+import Footer from '../footer/footer';
 
 function App() {
   const [defaultList, setDefaultList] = useState(null);
@@ -63,11 +64,7 @@ function App() {
 
   return (
     <ListContext.Provider value={list}>
-      <div
-        className={style.app}
-        onKeyDown={closePopupEsc}
-        tabIndex='0'
-      >
+      <div className={style.app} onKeyDown={closePopupEsc} tabIndex='0'>
         <AppHeader />
         {list && (
           <MainPage
@@ -78,6 +75,7 @@ function App() {
             itemsPerPage={30}
           />
         )}
+        <Footer />
       </div>
       <ImagePopup close={closePopup} card={card} />
     </ListContext.Provider>
